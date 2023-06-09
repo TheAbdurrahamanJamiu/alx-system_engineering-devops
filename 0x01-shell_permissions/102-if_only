@@ -1,2 +1,2 @@
-#!bin/bash
-chown-from=gullaume berry hatchet
+#!/bin/bash
+chown --from=guillaume berry hello
