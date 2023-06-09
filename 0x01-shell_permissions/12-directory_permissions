@@ -1,0 +1,2 @@
+#!/bin/touch
+mdir -m 751 my_dr
