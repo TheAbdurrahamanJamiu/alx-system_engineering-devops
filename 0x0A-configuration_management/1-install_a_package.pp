@@ -1,9 +1,17 @@
-#creating a file /tmp using puppet
+#install flask with puppet
 
-file { 'my_file':
-    path    => '/tmp/school',
-    mode    => '1230',
-    owner   => 'www-data',
-    group   => 'www-data',
-    content => 'I can do hard things',
+package { 'python3.8*':
+  ensure   => '3.8.10',
+  provider => 'pip3',
+}
+
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
+}
+
+package { 'Werkzeug':
+  ensure   => '2.1.1',
+  provider => 'pip3',
+  require  => package['flask'],
 }
