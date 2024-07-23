@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Ruun a software as anothe ruser
+
+sudo -u $1 whoami
