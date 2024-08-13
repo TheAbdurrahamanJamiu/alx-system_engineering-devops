@@ -19,3 +19,5 @@ def number_of_subscribers(subreddit):
     except Exception as e:
         print(f"An error occurred: {e}")
         return 0
+    print(number_of_subscribers('python'))
+    print(number_of_subscribers('nonexistent_subreddit'))
