@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 # Fixes bad "phpp" extensions to "php" in "wp-settings.php".
 
 exec {'fix-wordpress':
   command => 'sed -i s/phpp/php/g /var/ww/html/wp-settings.php;',
   path    => '/usr/local/bin/:/bin/'
 }
+=======
+>>>>>>> 9e697458cda5d9754a8719862c8d45739872f75b
 # Puppet manifest to fix file permissions and ensure a module is enabled
 
 # Ensure the file has the correct permissions
